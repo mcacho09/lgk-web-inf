@@ -1,0 +1,156 @@
+/* RESET CSS */
+/* https://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CONTENT */
+
+
+seplogo {
+    margin: 0 50px 50px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+
+li a > div {
+    display: inline-block;
+    position: relative;
+    width: 180px;
+    height: 200px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+li:first-child a > div,
+li:last-child a > div {
+    width: 200px;
+}
+
+li a {
+    color: #A8A8A8;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+li .layer2 {
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 25px 0 rgba(00, 00, 00, 0.15);
+    box-shadow: 0 0 25px 0 rgba(00, 00, 00, 0.15);
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+li:first-child .layer2,
+li:last-child .layer2 {
+    left: 0px;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* hover layer effects */
+
+li a:hover .layer2 {
+    top: -40px;
+    left: -10px;
+    width: 100px;
+}
+
+li:first-child a:hover .layer2 {
+    top: -40px;
+    left: -40px;
+}
+
+li:last-child a:hover .layer2 {
+    top: -40px;
+    left: 40px;
+}
+
+
+/* Layer content */
+
+svg {
+    height: 42px;
+    margin-top: 25px;
+}
+
+.nb {
+    font-size: 15px;
+    padding-top: 27px;
+}
+
+li .textlink {
+    position: absolute;
+    bottom: 13px;
+    right: 40px;
+    left: 40px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+li:first-child .textlink {
+    text-align: right;
+}
+
+li:last-child .textlink {
+    text-align: left;
+}
+
+
+/* Facebook */
+
+#fb {
+    background: #364F8F;
+    width: 50%;
+    height: 50%;
+}
+
+
+/* Twitter */
+
+#tw {
+    background: #02A8EA;
+    width: 50%;
+    height: 50%;
+}
+
+
+/* Instagram */
+
+#insta {
+    background: #125486;
+    width: 50%;
+    height: 50%;
+}
